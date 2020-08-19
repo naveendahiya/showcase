@@ -1,0 +1,196 @@
+/* for services in app.js */
+#hiring {
+	background-size: cover;
+	background-position: center;
+	color: #2e7bcf;
+	background-attachment: fixed;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+#hiring h1 {
+	text-align: center;
+	color: #2e7bcf;
+	padding-bottom: 10px;
+}
+#hiring h1:after {
+	content: '';
+	background: #2e7bcf;
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 10px auto;
+}
+.hiring {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.icon {
+	font-size: 80px;
+	margin: 20px auto;
+	padding: 20px;
+	height: 80px;
+	width: 80px;
+}
+
+.hiring p:before {
+	font-family: verdana;
+	font-size: 80px;
+	margin-top: 10px;
+	color: #2e7bcf;
+}
+.hiring .col-md-3:hover {
+	background-color: #2e7bcf;
+	color: white;
+	cursor: pointer;
+	transition: 1s;
+}
+
+/* for navigation */
+/* html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+select,
+input,
+option {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+.buyer_profile .owl-nav {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+*/
+
+
+.owl-prev {
+	width: 15px;
+	height: 100px;
+	position: absolute;
+	top: 40%;
+	font-size: 2rem;
+	margin-left: -20px;
+	transform: translateX(-30px);
+	display: block !important;
+	border: 0px solid black;
+}
+
+.owl-next {
+	width: 15px;
+	height: 100px;
+	position: absolute;
+	top: 40%;
+	font-size: 2rem;
+	transform: translateX(0px);
+	right: -25px;
+	display: block !important;
+	border: 0px solid black;
+}
+
+.owl-prev span {
+	font-size: 4rem !important;
+}
+.owl-next span {
+	font-size: 4rem !important;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+	background-color: transparent !important;
+	color: black !important;
+}
+
+.owl-prev:focus,
+.owl-next:focus {
+	outline: none;
+}
+
+/* .owl-prev i,
+.owl-next i {
+	transform: scale(1, 6);
+	color: #ccc;
+} */
+
+/* for footer in app.js */
+#footer {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	color: white;
+	background-color: black;
+}
+#footer h1:after {
+	content: '';
+	background: #efefef;
+	display: block;
+	height: 3px;
+	width: 150px;
+	margin: 20px auto;
+}
+#footer h4 {
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	font-family: Calibiri;
+	font-style: italic;
+}
+#footer .fa {
+	font-size: 18px;
+}
