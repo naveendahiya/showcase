@@ -114,12 +114,7 @@ const App = () => {
 					<div className={`col-md-7 col-sm-12 text-justify`}>
 						<h1>Brand</h1>
 						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione quasi inventore minus
-							cupiditate, dolore tenetur dolor exercitationem nulla. Obcaecati corrupti natus voluptatem
-							quae corporis adipisci incidunt consectetur officia dicta unde assumenda, iste eos ullam
-							mollitia sequi, eum optio itaque quis nam vitae molestias laboriosam nobis. Ducimus earum
-							magnam beatae sunt sit quae quia eos similique rem hic enim suscipit accusamus, aperiam
-							natus repellat ex adipisci eligendi.
+							Your text
 						</p>
 						<button className={`btn btn-success btn-lg`}>Review button</button>
 					</div>
@@ -196,7 +191,7 @@ const App = () => {
 									</p>
 								</div>
 								<div className="btn_part">
-									<a href="https://cloud.my.ratemyagent.com/real-reviews-real-people-Jane">
+									<a>
 										Read more
 									</a>
 								</div>
@@ -225,7 +220,7 @@ const App = () => {
 									</p>
 								</div>
 								<div className="btn_part">
-									<a href="https://cloud.my.ratemyagent.com/real-reviews-real-people-Jane">
+									<a  >
 										Read more
 									</a>
 								</div>
@@ -254,7 +249,7 @@ const App = () => {
 									</p>
 								</div>
 								<div className="btn_part">
-									<a href="https://cloud.my.ratemyagent.com/real-reviews-real-people-Jane">
+									<a>
 										Read more
 									</a>
 								</div>
@@ -283,7 +278,7 @@ const App = () => {
 									</p>
 								</div>
 								<div className="btn_part">
-									<a href="https://cloud.my.ratemyagent.com/real-reviews-real-people-Jane">
+									<a>
 										Read more
 									</a>
 								</div>
@@ -312,7 +307,7 @@ const App = () => {
 									</p>
 								</div>
 								<div className="btn_part">
-									<a href="https://cloud.my.ratemyagent.com/real-reviews-real-people-Jane">
+									<a  >
 										Read more
 									</a>
 								</div>
@@ -341,7 +336,7 @@ const App = () => {
 									</p>
 								</div>
 								<div className="btn_part">
-									<a href="https://cloud.my.ratemyagent.com/real-reviews-real-people-Jane">
+									<a  >
 										Read more
 									</a>
 								</div>
@@ -370,7 +365,7 @@ const App = () => {
 									</p>
 								</div>
 								<div className="btn_part">
-									<a href="https://cloud.my.ratemyagent.com/real-reviews-real-people-Jane">
+									<a  >
 										Read more
 									</a>
 								</div>
