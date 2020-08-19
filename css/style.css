@@ -113,6 +113,7 @@ top:-500px;
 .carousel-item img
 {
 	opacity:1;
+	width: 100% !important;
 }
 .carousel-caption 
 {
