@@ -1,7 +1,7 @@
 ﻿<html>
 <head>
 <title>Business Tech Labs</title>
-<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" rel="javascript" type="text/javascript"></script>
@@ -38,11 +38,50 @@
 <div id="headerslider" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/slider.jpg" class="d-block img-fluid"/>
+      <img src="images/slidernew.jpg" class="d-block img-fluid"/>
     </div>
   </div>
 </div>
 </section>
+<center>
+<section id="content" style="height:0px;">
+<rma-search-v2 ng-class="::$ctrl.styles.search" class="ng-isolate-scope search--13uGo"><div ng-class="{ 'overlayStyles--1ZsRg': $ctrl.isInOverlay}" rma-search-keyboard-scroller="" rma-off-click-hides-dropdown="">
+
+  <!-- ngIf: ::$ctrl.showSalesLeasingToggles --><rma-sales-leasing-toggle-v2 ng-if="::$ctrl.showSalesLeasingToggles" is-in-overlay="::$ctrl.isInOverlay" class="ng-scope ng-isolate-scope">
+</rma-sales-leasing-toggle-v2><!-- end ngIf: ::$ctrl.showSalesLeasingToggles -->
+  
+  <div  style="height:200px;" ng-class="$ctrl.styles.searchBox" ng-style="$ctrl.transparentBackground &amp;&amp; {'background-color': 'transparent'}" class="searchBox--3qF-P">
+    <!-- ngIf: ::$ctrl.showUserTypeToggles --><rma-user-type-toggle-v2 ng-if="::$ctrl.showUserTypeToggles" is-sales-mode="$ctrl.isSalesMode" is-in-overlay="$ctrl.isInOverlay" is-mortgage-broker-mode="$ctrl.isMortgageBrokerMode" enable-location-search="$ctrl.enableLocationSearch" analytics-info="$ctrl.analyticsInfo" class="ng-scope ng-isolate-scope"><!-- ngIf: !$ctrl.isMortgageBrokerMode --><div ng-if="!$ctrl.isMortgageBrokerMode" ng-class="[$ctrl.styles.filterButtonWrapper, {'overlayStyles--1K2Bg': $ctrl.isInOverlay}]" class="ng-scope filterButtonWrapper--lpYgZ">
+  
+  <!-- LOCATIONS -->
+  <!-- ngIf: $ctrl.enableLocationSearch --><button style="color:#2e7bcf;border:1px solid #2e7bcf;" type="button" ng-if="$ctrl.enableLocationSearch" class="btn ng-scope filterButton--2GM5X" ng-class="[$ctrl.styles.filterButton, {'filterButtonActive--3eakv': $ctrl.isSearchType($ctrl.searchTypeLocation)}]" ng-click="$ctrl.toggleSearch($ctrl.searchTypeLocation)" analytics-on="" analytics-category="Consumer Interaction" analytics-event="Sales Location toggle" analytics-label="Homepage banner">Locations</button><!-- end ngIf: $ctrl.enableLocationSearch -->
+
+  <!-- AGENTS -->
+  <!-- ngIf: $ctrl.isSalesMode --><button style="color:#2e7bcf;border:1px solid #2e7bcf;" type="button" ng-if="$ctrl.isSalesMode" class="btn ng-binding ng-scope filterButton--2GM5X filterButtonActive--3eakv" ng-class="[$ctrl.styles.filterButton, {'filterButtonActive--3eakv': $ctrl.isSearchType($ctrl.searchTypeAgent)}]" ng-click="$ctrl.toggleSearch($ctrl.searchTypeAgent)" analytics-on="" analytics-category="Consumer Interaction" analytics-event="Sales Agent toggle" analytics-label="Homepage banner">Agents</button><!-- end ngIf: $ctrl.isSalesMode -->
+
+  <!-- AGENCIES -->
+  <button type="button" style="color:#2e7bcf;border:1px solid #2e7bcf;" class="btn ng-binding filterButton--2GM5X" ng-class="[$ctrl.styles.filterButton, {'filterButtonActive--3eakv': $ctrl.isSearchType($ctrl.searchTypeAgency)}]" ng-click="$ctrl.toggleSearch($ctrl.searchTypeAgency)" analytics-on="" analytics-category="Consumer Interaction" analytics-event="Sales Agency toggle" analytics-label="Homepage banner">Agencies</button>
+</div><!-- end ngIf: !$ctrl.isMortgageBrokerMode -->
+</rma-user-type-toggle-v2><!-- end ngIf: ::$ctrl.showUserTypeToggles -->
+    
+    <rma-search-bar-v2 ng-class="$ctrl.styles.searchArea" dismiss-modal="$ctrl.dismissModal" is-in-overlay="$ctrl.isInOverlay" on-search-result-selected="$ctrl.onSearchResultSelected(url)" class="ng-isolate-scope searchArea--lTY6P"><div ng-class="[$ctrl.styles.searchArea, {'overlayStyles--w9lHc' : $ctrl.isInOverlay}]" class="searchArea--2ZQZB">
+  <div ng-class="$ctrl.styles.searchBar" class="searchBar--2pfhV" style="border:5px solid #2e7bcf;">
+    <!-- note: name is referenced by rma-search-keyboard-scroller -->
+    <input name="search-input" type="search" ng-class="$ctrl.styles.searchInput" placeholder="Search for agent...." ng-model="$ctrl.searchTerm" ng-change="$ctrl.searchChanges.next($ctrl.searchTerm)" ng-focus="$ctrl.canShowDropdown = true" autocomplete="off" autocorrect="off" spellcheck="false" autofocus="" class="ng-pristine ng-valid ng-empty searchInput--2wBWz ng-touched">
+    <!-- ngIf: $ctrl.searchTerm -->
+  </div>
+  <div name="response-area" ng-class="$ctrl.styles.responseArea" class="responseArea--2s1sm">
+    <!-- ngIf: $ctrl.isInOverlay -->
+    <!-- ngIf: $ctrl.canShowDropdown && ($ctrl.searchTerm || $ctrl.isSearching) -->
+  </div>
+</div>
+</rma-search-bar-v2>
+  </div>
+</div>
+</rma-search-v2>
+</section>
+</section>
+</center>
 <section id="hiring">	
 	<div class="container">
 		<div class="row hiring">
