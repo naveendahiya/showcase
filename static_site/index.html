@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="header">
+        <div id='heading' class="heading">envi</div>
+        <div class="menu">
+            <img onclick='translatePlus()' id='menu-svg'  src='./images/menu.svg' class='menu-img' alt='menu' />
+        </div>
+    </nav>
+
+    <div id="menu-box" class="menu-box">
+        <div class="menu-top">
+            <img src='./images/iconfinder_icon-close_211652.svg' id="close-svg" onclick="translateNegative()" class="close-icon" />
+        </div>
+        <div id="menu-middle" class="menu-middle">
+            <span>SERVICES</span>
+            <span>PRICING</span>
+            <span>CONTACT</span>
+        </div>
+        <div id="bottom" class="menu-bottom">
+          hello@envicreative.com.au
+        </div>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="./images/first.png" class='slide-img' />
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/second.png" class='slide-img' />
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/third.png" class='slide-img' />
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/fourth.png" class='slide-img' />
+        </div>
+
+        <img class='prev' id="prev" onclick="plusSlides(-1)" src='./images/previous.svg'>
+        <img class='next' id="next" onclick="plusSlides(1)" src='./images/next.svg'>
+
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" >&#10095;</a> -->
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 15px 0;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.heading{
+    font-family: 'Russo One', sans-serif;
+    margin-left: 30px;
+    font-size: 60px;
+}
+.menu{
+    height: 50px;
+    width: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.menu-box{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 450px;
+    background-color: black;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 0.7s ease;
+}
+.menu-top{
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.close-icon{
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.menu-middle{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.menu-middle span{
+
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;   
+}
+
+.menu-bottom{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;   
+}
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    margin-top: 0;
+    background-size: contain;
+    overflow-y: hidden;
+  }
+  .slide-img{
+      height: 100vh;
+      width: 100%;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    user-select: none;
+    z-index: 50;
+  }
+  
+  .prev{
+      left: 50px;
+  }
+
+
+  .next {
+    right: 50px;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
